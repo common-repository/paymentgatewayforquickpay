@@ -1,0 +1,33 @@
+<patTemplate:tmpl name="edit_gateway" unusedvars="nbsp" >
+<form action="" method="post" name="adminForm">
+<table style="color:#FFF;">
+<tr align="center" valign="middle"><td align="left" valign="top" colspan="3">&nbsp;</td></tr>
+    <tr align="center" valign="middle"><td align="left" valign="top" colspan="3">{GATEWAYNAME}</td></tr>
+	<tr align="center" valign="middle">
+		<td align="left" valign="top">{JR_GATEWAY_CONFIG_ACTIVE}</td>
+		<td align="left" valign="top">{ACTIVE}</td>
+		<td align="left" valign="top">&nbsp;</td>
+	</tr>
+	<tr align="center" valign="middle">
+		<td align="left" valign="top">{MERCHANT_ID}</td>
+		<td align="left" valign="top">{MERCHANTID}</td>
+		<td align="left" valign="top">&nbsp;</td>
+	</tr>
+	<tr align="center" valign="middle">
+		<td align="left" valign="top">{AGREEMENT_ID}</td>
+		<td align="left" valign="top">{AGREEMENTID}</td>
+		<td align="left" valign="top">&nbsp;</td>
+	</tr>
+    <tr align="center" valign="middle">
+		<td align="left" valign="top">{PAYMENT_WIND_KEY}</td>
+		<td align="left" valign="top">{PAYMENTKEY}</td>
+		<td align="left" valign="top">&nbsp;</td>
+	</tr>
+   
+</table>
+<input type="hidden" name="no_html" value="1" />
+<input type="hidden" name="plugin" value="{GATEWAY}" />
+<input type="hidden" name="task" value="savePlugin" />
+<input type="submit" value="Submit" class="btn btn-success" >
+</form>
+</patTemplate:tmpl>
